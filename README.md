@@ -2,10 +2,13 @@
 
 A simple interpreter for the untyped lambda calculus.
 
+(this reeks of ugly hack, but I wanted to play with fnparse which is
+magical)
+
 ## Usage
 
     (use 'lc)
-    (beta (parse "(\x.x b)"))
+    (to-str (beta (parse "(^x.x b)")))
 
 ## License
 
